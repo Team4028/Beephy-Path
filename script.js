@@ -369,6 +369,7 @@ function getPoint(i) {
 }
 
 function getDataString() {
+	waypoints = flipAllWayPoints(waypoints);
 	var title = ($("#title").val().length > 0) ? $("#title").val() : "UntitledPath";
 	var pathInit = "";
 	for(var i=0; i<waypoints.length; i++) {
@@ -381,6 +382,7 @@ function getDataString() {
 	var str = `
     pathName = buildPathFromWaypoints(inertiaGame, Arrays.asList(${"\n" + pathInit}));
 `
+waypoints = flipAllWayPoints(waypoints);
 	return str;
 }
 
