@@ -1,8 +1,8 @@
 var waypoints = [];
 var ctx;
-var width = 1656; //pixels
-var height = 823; //pixels
-var fieldWidth = 652; // in inches
+var width = 1500; //pixels
+var height = 750; //pixels
+var fieldWidth = 648; // in inches
 var fieldHeight = 324; // in inches
 var robotWidth = 35.45; //inches
 var robotHeight = 33.325; //inches
@@ -242,7 +242,7 @@ function init() {
         update();
     }
     imageFlipped = new Image();
-    imageFlipped.src = 'fieldflipped.png';
+    imageFlipped.src = 'fieldFlipped.png';
     $('input').bind("change paste keyup", function() {
 		console.log("change");
 		clearTimeout(wto);
